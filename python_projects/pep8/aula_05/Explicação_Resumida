@@ -1,0 +1,30 @@
+Muito bem-vindo ao vídeo final do nosso curso.
+Até aqui você conseguiu cumprir todas as especificações definidas pelas regras de negócio pelas filas do Bytebank.
+
+E muito além disso, essas especificações foram cumpridas seguindo padrões de estilo de código usando Type hints e desen-
+volvendo classes que tenham algum Design Pattern, que tenham algum padrão de projeto.
+
+E tudo isso para quê? Para conseguir deixar todos os códigos da fila do Bytebank mais legíveis para os novos desenvolve-
+dores que estão chegando.
+
+[00:37] Por exemplo, na "fila_base", você construiu uma classe template, um Template Method que ajuda muito aqueles
+desenvolvedores que vão usar a sua classe base, sejam obrigados a seguir um padrão. Consigam fazer direito todos os mé-
+todos e construir a classe como ela tem que ser. Porque uma "fila" é sempre parecida com a outra. Então ela pertence a
+um template, pertenca a uma "fila_base".
+
+[01:09] Aqui no "fabrica_fila" você desenvolveu o método "Factory", uma classe "Factory" que é uma classe que a partir
+de algum argumento, de alguma coisa para ela decidir, ela retorna uma classe específica para ser instanciada.
+E você criou uma "Injeção de dependência" que usamos dentro do método "estatistica" no "fila_prioritaria" para receber
+alguma dessas duas classes. Assim diminuímos bastante o tamanho desse método que era cheio de "if" que recebia vários
+argumentos.
+Ele recebe um só e tem apenas uma linha, que é a linha de retorno.
+
+[01:50] Além disso, usando o Flake8, agora qualquer desenvolvedor que faça parte desse projeto, que atue na classe das
+"filas", é obrigado a seguir o PEP-8. Porque na hora do "commit" se o PEP-8 identificar que tem alguma coisa que não
+esteja de acordo com o estilo de código, ele bloqueia. E isso vai tornar o código inteiro da equipe muito melhor.
+Usamos também Type hints que é aquela forma que tem de identificar qual tipo de variável o método retorna e que tipo de
+argumento ele recebe, que serve para identificar também uma variável ou atributo.
+
+[02:31] O que deixa o código muito mais legível. Espero que você tenha aproveitado bastante o curso até aqui, que tenha
+feito todas as atividades. Caso tenha alguma sugestão ou dúvida, não deixa de fazer. Eu espero ver você em breve e até
+logo.

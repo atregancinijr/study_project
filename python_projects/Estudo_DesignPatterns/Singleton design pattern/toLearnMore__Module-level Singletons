@@ -1,0 +1,8 @@
+All modules are Singletons by default because of Python’s importing behavior.
+Python works in the following way:
+1. Checks whether a Python module has been imported.
+2. If imported, returns the object for the module. If not imported, imports and
+instantiates it.
+3. So when a module gets imported, it is initialized. However, when the same module is
+imported again, it’s not initialized again, which relates to the Singleton behavior of
+having only one object and returning the same object.

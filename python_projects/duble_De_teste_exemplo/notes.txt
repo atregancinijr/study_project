@@ -1,0 +1,16 @@
+Diferentemente de testes de unidade clássicos, os testes com dublês têm o foco em verificação de comportamento, enquanto os testes clássicos fazem a verificação de estado. Vamos ver a diferença?
+
+Pedido é a unidade sob teste (SUT – system under test), e Estoque é um colaborador.
+Exemplo de testes clássicos:
+Vide test_my_example.py
+
+A verificação de estado é verificar os estados do SUT e de seus colaboradores depois do atributo (função) ter sido exercitado (executado no caso de teste). No caso, comparar os valores: a quantidade do estoque no final.
+
+Em Python dizemos que tudo é objeto, inclusive as funções. É por este motivo que conseguimos com que os dublês sejam aplicados nas funções. Usando a função patch conseguimos identificar a função ou o objeto que queremos substituir pelo dublê. No entanto, quando não é o caso de uma função, mas, sim, um objeto, e ele é uma dependência injetada (ou seja, é passado como parâmetro), não precisamos da função patch para embutir o dublê. Para estes casos, criamos um objeto que representa o dublê e o usamos.
+Vide classes.py
+
+Já na verificação de comportamento, é verificada a interação entre o SUT e os colaboradores. Então, a verificação foca em se foi possível diminuir o estoque.
+Vide test_my_example2.py
+Usar ou não dublês tem suas vantagens e desvantagens. Por um lado, o uso de dublês foca na unidade sob teste, isolando-a de qualquer outra unidade. Mas, por outro lado, como os colaboradores reais não estão sendo testados, e por isso é necessário que eles mesmos sejam, em algum momento, as unidades sob teste. Quando usamos testes de unidade sem os dublês, de alguma forma, estamos também testando seus colaboradores.
+
+Você pode ler Mocks are not Stubs (https://martinfowler.com/articles/mocksArentStubs.html) de Martin Fowler. Nessa mesma página, você encontrará o link para a versão em Português. Sobre este mesmo tema, leia está página Test Double (https://github.com/testdouble/contributing-tests/wiki/Test-Double), que conta sobre duas escolas de TDD (Desenvolvimento guiado por testes): Detroit (TDD clássico) e London (uso de dublês de testes como padrão).

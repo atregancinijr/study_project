@@ -1,0 +1,72 @@
+São 5 tipos:
+
+a) Dummy:
+    Substitui parâmetros de funções ou atributos que não participarão do caso de teste;
+
+b) Stub:
+    Fornece dados pré-configurados, ou seja, que fornecem entradas indiretas;
+
+c) Spy:
+    Captura e armazena as informações geradas pela unidade testada, e depois essas informações são verificadas e validadas no teste;
+
+d) Mock:
+    Quando nós fazemos um programa, um comportamento esperado, e também ele captura as informações geradas pela unidade de teste, então ele pode ser considerado uma mescla entre Stub e Spy;
+
+e) Fake:
+    É uma implementação simplificada do objeto real, então nos nossos testes, possivelmente, nós não precisamos realmente estar usando um objeto real ou um banco de dados real, por exemplo.
+
+QUANDO USAR:
+Os dubles são usados para substituir partes lentas do sistema, para nós termos comportamentos determinísticos quando estamos fazendo teste, coisas que ainda não estão implementadas ou é de responsabilidade de terceiros, ou partes do sistema que nós não queremos que gerem efeitos colaterais. Como a criação de um banco de dados, registro do banco de dados, criação de arquivos, ou até deleção de elementos da base ou coisa do tipo.
+Então, nós usamos quando precisamos de um dublê para fornecer entradas indiretas, um dublê que capture as saídas indiretas para verificação, ou quando nós queremos programar um comportamento esperado. Também, um dublê quando nós precisamos uma implementação alternativa e simplificada.
+
+QUANDO NÃO USAR E CUIDADOS NO USO DE DUBLÊS:
+Existem várias críticas ao Mock e a dublês de testes, pois ele pode deixar o seu teste muito acoplado com a unidade e é difícil de mantê-lo. O código da unidade pode ficar muito acoplado, ou seja, pode indicar que ele está tendo muitas dependências. Você pode deixar o seu teste muito dependente do estado atual da unidade.
+Atenção, você pode estar testando o dublê ao invés de testar a unidade. As vezes nós fazemos o dublê, achamos que estamos exercitando a unidade, e na verdade nós estamos exercitando o próprio Mock.
+
+
+Alguns problemas e como evitá-los:
+
+Por exemplo: suponha que eu tenha uma função “obter_dados_de_arquivo” e eu estou usando aqui o “open”, que é uma função nativa do Python. Não preciso fazer importação de biblioteca nenhuma, só que eu tenho aqui o meu teste do “patch” do “open”.
+
+def obter_dados_de_arquivo():
+    with open("/tmp/arquivo") as fp:
+        conteudo = fp.read()
+     return conteudo
+
+def test_obter_dados_de_arquivo():
+    with patch("open") as duble:
+        duble.return_value = fake_arquivo
+
+Imagine que eu queira mudar. “Não quero mais usar o ‘open’!” Eu decidi que por algum motivo, eu conheci o “pathlib” e tem mais coisas, mais recursos, por exemplo, e eu vou usar o “pathlib”.
+from pathlib import Path
+
+def obter_dados_de_arquivo():
+    path = Path("tmp/arquivo")
+    with open("/tmp/arquivo") as fp:
+        conteudo = fp.read()
+     return conteudo
+
+Então eu troquei o meu “open” pelo “pathlib”. O que aconteceu? “obter_dados_de_arquivo” continua igual a mesma assinatura. Eu vou rodar. Vai quebrar o meu teste, porque ele aqu - o que ele está? Eu estou fazendo o “patch” do “open”, e não existe mais o “open” ali.
+Então em todo lugar onde eu tiver esse “patch” do “open”, ele vai falhar.
+
+Qual é a solução? A solução é, por exemplo, passar o nome do arquivo como parâmetro, e o seu teste em cima de “obter_dados_de_arquivo”, e não em cima de “open” ou “path”. Nada disso!
+
+def obter_dados_de_arquivo(arquivo):
+    path = Path(arquivo)
+    with path.open() as fp:
+        conteudo = fp.read()
+    return conteudo
+
+def test_obter_dados_de_arquivo(tmpdir):
+    arquivo = tmpdir.join("arquivo")
+    arquivo.write("conteudo do arquivo")
+
+    resultado = obter_dados_de_arquivo(arquivo)
+    assert "conteudo do arquivo" == resultado
+
+Você tem aqui a função, você tem aqui o “resultado” e só tem o “assert”. Não tem nem dublê de teste, ou seja, realmente foi necessário você usar um dublê de teste nesse caso?
+
+Isto que deve ser avaliado. Então temos que tomar cuidado para onde nós estamos colocando os dublês se realmente são necessários naqueles pontos.
+
+breve e divertido diálogo sobre as diferenças entre os dublês de testes: https://blog.cleancoder.com/uncle-bob/2014/05/14/TheLittleMocker.html
+biblioteca unittest.mock -> https://docs.python.org/3/library/unittest.mock.html

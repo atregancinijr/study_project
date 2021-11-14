@@ -1,0 +1,17 @@
+THE OPEN/CLOSE PRINCIPLE:
+Classes or objects and methods should be OPEN FOR EXTENSIONS but CLOSE FOR MODIFICATIONS.
+>> write your classes or modules in a generic way. whenever you need to extends the behavior of the class or object,
+you shouldn’t have to change the class itself. Rather, a simple extension of the class should help you build the new behavior.
+>> Advantages:
+   >>>> Existing classes are not changed;
+   >>>> Regression are less;
+   >>>> helps maintain backward compatibility for the previous code.
+
+THE INVERSION OF CONTROL PRINCIPLE:
+High-level modules shouldn’t be dependent on low-level modules. They should both be dependent on abstractions.
+Details should depend on abstractions and not the other way round.
+>>  two modules shouldn’t be dependent on each other in a tight way. The base module and dependent module should be
+decoupled with an abstraction layer in between.
+
+INCOMPLETO
+

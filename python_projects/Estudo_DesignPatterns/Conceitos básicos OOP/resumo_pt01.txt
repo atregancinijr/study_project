@@ -1,0 +1,34 @@
+Object-oriented paradigms (OOP) in Python: The understanding the concepts of objects, classes, and
+methods.
+1) The object-oriented world presents the
+concept of objects;
+2) objects that have attributes (data members) and procedures (member
+functions);
+3) functions are responsible for manipulating the attributes;
+
+OBJECTS:
+The following points describe objects:
+They represent ENTITIES in your application under development.
+Entities interact among themselves to solve real-world problems.
+For example, Person is an entity and Car is an entity. Person drives Car to move from
+one location to the other.
+
+CLASSES:
+Classes help developers to represent real-world entities:
+>>Classes define objects in attributes and behaviors. Attributes are data members and
+behaviors are manifested by the member functions;
+>>Classes consist of constructors that provide the initial state for these objects;
+>>CLASSES ARE like TEMPLATES and hence can be easily reused;
+For example, class Person will have attributes name and age and member function
+gotoOffice() that defines his behavior for travelling to office for work.
+
+
+METHODS:
+>>They REPRESENT the BEHAVIOR of the OBJECT
+>>Methods WORK ON ATTRIBUTES (MANIPULATING THEM) and also implement the desired functionality
+
+Obs.:
+a) everything in Python is an object;
+b) Each class instance or variable has its own memory address or
+identity;
+c) OBJECTS ARE INSTANCES OF CLASSES;

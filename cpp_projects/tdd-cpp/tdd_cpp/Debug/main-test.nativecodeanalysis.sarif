@@ -1,0 +1,1140 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Estouro aritmético: usando o operador '*' em um valor de byte 4 e, em seguida, convertendo o resultado em um valor de byte 8. Converta o valor no tipo mais amplo antes de chamar o operador '*' para evitar estouro (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 7891,
+                  "startColumn": 53,
+                  "endLine": 7891,
+                  "endColumn": 63
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Approx@Detail@Catch@@QAE@N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::ResultDisposition::Flags' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 8234,
+                  "startColumn": 23,
+                  "endLine": 8234,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0AssertionHandler@Catch@@QAE@ABVStringRef@1@ABUSourceLineInfo@1@V21@W4Flags@ResultDisposition@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::ResultWas::OfType' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 8246,
+                  "startColumn": 28,
+                  "endLine": 8246,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?handleMessage@AssertionHandler@Catch@@QAEXW4OfType@ResultWas@2@ABVStringRef@2@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::clara::detail::ResultBase::Type' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 8964,
+                  "startColumn": 17,
+                  "endLine": 8964,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0ResultBase@detail@clara@Catch@@IAE@W4Type@0123@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::WarnAbout::What' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 9733,
+                  "startColumn": 21,
+                  "endLine": 9733,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??R<lambda_86d8d08ded205105f59d218f9d10323f>@@QBE?AW4What@WarnAbout@Catch@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::ShowDurations::OrNot' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 9875,
+                  "startColumn": 59,
+                  "endLine": 9875,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??R<lambda_d4b93e756e880d6617bd7d3d5010c837>@@QBEX_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::RunTests::InWhatOrder' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 9998,
+                  "startColumn": 5,
+                  "endLine": 9998,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0ConfigData@Catch@@QAE@ABU01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::UseColour::YesOrNo' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 9998,
+                  "startColumn": 5,
+                  "endLine": 9998,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0ConfigData@Catch@@QAE@ABU01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::WaitForKeypress::When' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 9998,
+                  "startColumn": 5,
+                  "endLine": 9998,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0ConfigData@Catch@@QAE@ABU01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::Colour::Code' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 10112,
+                  "startColumn": 18,
+                  "endLine": 10112,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?use@NoColourImpl@?A0x591cbdc6@Catch@@UAEXW4Code@Colour@3@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::TestCaseInfo::SpecialProperties' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 11159,
+                  "startColumn": 6,
+                  "endLine": 11159,
+                  "endColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0TestCaseInfo@Catch@@QAE@ABU01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Estouro aritmético: usando o operador '*' em um valor de byte 4 e, em seguida, convertendo o resultado em um valor de byte 8. Converta o valor no tipo mais amplo antes de chamar o operador '*' para evitar estouro (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 11713,
+                  "startColumn": 83,
+                  "endLine": 11713,
+                  "endColumn": 93
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?WithinRel@Matchers@Catch@@YA?AUWithinRelMatcher@Floating@12@M@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::CaseSensitive::Choice' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 11739,
+                  "startColumn": 26,
+                  "endLine": 11739,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0CasedString@StdString@Matchers@Catch@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Choice@CaseSensitive@3@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "Este tipo de função não pode 'throw'. Declare-o \"noexcept\" (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 11882,
+                  "startColumn": 20,
+                  "endLine": 11882,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0ScopedMessage@Catch@@QAE@$$QAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26816",
+          "message": {
+            "text": "O ponteiro aponta para a memória alocada na pilha."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 12657,
+                  "startColumn": 17,
+                  "endLine": 12657,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?acquire@GeneratorTracker@Generators@Catch@@SAAAU123@AAVTrackerContext@TestCaseTracking@3@ABUNameAndLocation@53@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::TestCaseTracking::TrackerBase::CycleState' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 12730,
+                  "startColumn": 21,
+                  "endLine": 12730,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?close@GeneratorTracker@Generators@Catch@@UAEXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::TestCaseTracking::TrackerContext::RunState' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 7551,
+                  "startColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0TrackerContext@TestCaseTracking@Catch@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26816",
+          "message": {
+            "text": "O ponteiro aponta para a memória alocada na pilha."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 14581,
+                  "startColumn": 13,
+                  "endLine": 14581,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?acquire@SectionTracker@TestCaseTracking@Catch@@SAAAV123@AAVTrackerContext@23@ABUNameAndLocation@23@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::TestSpecParser::Mode' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 5216,
+                  "startColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0TestSpecParser@Catch@@QAE@ABUITagAliasRegistry@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Estouro aritmético: usando o operador '+' em um valor de byte 4 e, em seguida, convertendo o resultado em um valor de byte 8. Converta o valor no tipo mais amplo antes de chamar o operador '+' para evitar estouro (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 15004,
+                  "startColumn": 35,
+                  "endLine": 15004,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?estimateClockResolution@?A0x591cbdc6@Catch@@YA_KXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::Detail::?A0x591cbdc6::Endianness::Arch' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 15069,
+                  "startColumn": 28,
+                  "endLine": 15069,
+                  "endColumn": 45
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?which@Endianness@?A0x591cbdc6@Detail@Catch@@SA?AW4Arch@1234@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::WildcardPattern::WildcardPosition' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 5110,
+                  "startColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0WildcardPattern@Catch@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Choice@CaseSensitive@1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::XmlEncode::ForWhat' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 15547,
+                  "startColumn": 16,
+                  "endLine": 15547,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0XmlEncode@Catch@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4ForWhat@01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "O tipo enumerado 'Catch::?A0x591cbdc6::ColumnInfo::Justification' não está no escopo. Prefira 'classe enumerada' em vez de 'enumeração' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 16495,
+                  "startColumn": 6,
+                  "endLine": 16495,
+                  "endColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0ColumnInfo@?A0x591cbdc6@Catch@@QAE@ABU012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "A variável 'Catch::Option<unsigned int>::storage' não foi inicializada. Sempre inicialize uma variável de membro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 4414,
+                  "startColumn": 9,
+                  "endLine": 4414,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0?$Option@I@Catch@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Catch::Option<unsigned int>::storage"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "A variável 'Catch::clara::detail::ResultValueBase<Catch::clara::detail::ParseState>::<unnamed-tag>::m_value' não foi inicializada. Sempre inicialize uma variável de membro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 8983,
+                  "startColumn": 17,
+                  "endLine": 8983,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0?$ResultValueBase@VParseState@detail@clara@Catch@@@detail@clara@Catch@@IAE@ABV0123@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Catch::clara::detail::ResultValueBase<Catch::clara::detail::ParseState>::<unnamed-tag>::m_value"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "A variável 'Catch::Option<Catch::AssertionResult>::storage' não foi inicializada. Sempre inicialize uma variável de membro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 4414,
+                  "startColumn": 9,
+                  "endLine": 4414,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0?$Option@VAssertionResult@Catch@@@Catch@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Catch::Option<Catch::AssertionResult>::storage"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "A variável 'Catch::Option<Catch::TestCaseInfo>::storage' não foi inicializada. Sempre inicialize uma variável de membro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 4414,
+                  "startColumn": 9,
+                  "endLine": 4414,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0?$Option@UTestCaseInfo@Catch@@@Catch@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Catch::Option<Catch::TestCaseInfo>::storage"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "A variável 'Catch::Option<Catch::GroupInfo>::storage' não foi inicializada. Sempre inicialize uma variável de membro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 4414,
+                  "startColumn": 9,
+                  "endLine": 4414,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0?$Option@UGroupInfo@Catch@@@Catch@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Catch::Option<Catch::GroupInfo>::storage"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "A variável 'Catch::Option<Catch::TestRunInfo>::storage' não foi inicializada. Sempre inicialize uma variável de membro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 4414,
+                  "startColumn": 9,
+                  "endLine": 4414,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0?$Option@UTestRunInfo@Catch@@@Catch@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Catch::Option<Catch::TestRunInfo>::storage"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "A variável 'Catch::clara::detail::ResultValueBase<Catch::clara::detail::ParseState>::<unnamed-tag>::m_value' não foi inicializada. Sempre inicialize uma variável de membro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 8981,
+                  "startColumn": 17,
+                  "endLine": 8981,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0?$ResultValueBase@VParseState@detail@clara@Catch@@@detail@clara@Catch@@IAE@W4Type@ResultBase@123@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Catch::clara::detail::ResultValueBase<Catch::clara::detail::ParseState>::<unnamed-tag>::m_value"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "A variável 'Catch::clara::detail::ResultValueBase<enum Catch::clara::detail::ParseResultType>::<unnamed-tag>::m_value' não foi inicializada. Sempre inicialize uma variável de membro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 8981,
+                  "startColumn": 17,
+                  "endLine": 8981,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0?$ResultValueBase@W4ParseResultType@detail@clara@Catch@@@detail@clara@Catch@@IAE@W4Type@ResultBase@123@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Catch::clara::detail::ResultValueBase<enum Catch::clara::detail::ParseResultType>::<unnamed-tag>::m_value"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "A variável 'Catch::clara::detail::ResultValueBase<enum Catch::clara::detail::ParseResultType>::<unnamed-tag>::m_value' não foi inicializada. Sempre inicialize uma variável de membro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 8983,
+                  "startColumn": 17,
+                  "endLine": 8983,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0?$ResultValueBase@W4ParseResultType@detail@clara@Catch@@@detail@clara@Catch@@IAE@ABV0123@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Catch::clara::detail::ResultValueBase<enum Catch::clara::detail::ParseResultType>::<unnamed-tag>::m_value"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "A variável 'Catch::clara::detail::Token::type' não foi inicializada. Sempre inicialize uma variável de membro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 8870,
+                  "startColumn": 13,
+                  "endLine": 8870,
+                  "endColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Token@detail@clara@Catch@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Catch::clara::detail::Token::type"
+          }
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "Este tipo de função não pode 'throw'. Declare-o \"noexcept\" (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+                },
+                "region": {
+                  "startLine": 5544,
+                  "startColumn": 9,
+                  "endLine": 5544,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0AssertionStats@Catch@@QAE@$$QAU01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29914.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0080B1C0 -il C:\\Users\\Pichau\\AppData\\Local\\Temp\\_CL_0dd608feast -typedil -f main-test.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829914 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\DEV\\vcpkg\\installed\\x86-windows\\include -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++17 -FoDebug\\main-test.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory C:\\projects\\cpp_projects\\tdd-cpp\\tdd_cpp -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\projects\\cpp_projects\\tdd-cpp\\tdd_cpp\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/projects/cpp_projects/tdd-cpp/tdd_cpp/usuario.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "849cdcbe2d6b2a44c7f84999c4869997"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/projects/cpp_projects/tdd-cpp/tdd_cpp/usuario.hpp"
+          },
+          "hashes": {
+            "md5": "0ca910f48d0e2c939afcabb9cb51036c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/projects/cpp_projects/tdd-cpp/tdd_cpp/test-usuario.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "93e3b2228066c60a3745c2efe52a1482"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/projects/cpp_projects/tdd-cpp/tdd_cpp/catch.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "68dbac5b2d5581fc7058f8e5ae73fe38"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/projects/cpp_projects/tdd-cpp/tdd_cpp/test-leilao.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "0a26b5415605e8955b54f60f0cb75a9e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/projects/cpp_projects/tdd-cpp/tdd_cpp/avaliador.hpp"
+          },
+          "hashes": {
+            "md5": "f5bc547cff191f1403aa7d61a1a53cf3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/projects/cpp_projects/tdd-cpp/tdd_cpp/leilao.hpp"
+          },
+          "hashes": {
+            "md5": "6d08dcb96dfe27440d447abf43cc5692"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/projects/cpp_projects/tdd-cpp/tdd_cpp/lance.hpp"
+          },
+          "hashes": {
+            "md5": "d700cd2b7ef144230c22c840a66f8be5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/projects/cpp_projects/tdd-cpp/tdd_cpp/test-avaliador.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "497b6d798d0683be50bcd5caaa268392"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/projects/cpp_projects/tdd-cpp/tdd_cpp/main.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "8d18a630809727a99fbaa1092cd03345"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/projects/cpp_projects/tdd-cpp/tdd_cpp/main-test.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "a50338bded6f338108458bca7e8eb9e6"
+          }
+        }
+      ]
+    }
+  ]
+}
