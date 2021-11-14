@@ -1,0 +1,10 @@
+{
+  "browser": "Chrome",
+  "implicit_wait": 10,
+
+  "server": "192.168.200.104",
+  "product_code": "4444",
+  "board": "BOARD-STUB",
+  "serial_number": "33",
+  "family": "FAMILY-STUB"
+}
