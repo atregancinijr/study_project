@@ -9,6 +9,7 @@
   "author": "Anderson Tregancini Junior",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.5.4"
+    "cypress": "^9.5.4",
+    "mochawesome": "^7.1.3"
   }
 }
