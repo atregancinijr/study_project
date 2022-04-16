@@ -1,0 +1,32 @@
+[
+    {
+        "email": "tester1@tester.com.br",
+        "fullname":"Tester Arquiteto",
+        "username":"tester1",
+        "password":"arquitetopassword123"
+    },
+    {
+        "email": "tester2@tester.com.br",
+        "fullname":"Tester Senior",
+        "username":"tester2",
+        "password":"seniorpassword123"
+    },
+    {
+        "email": "tester3@tester.com.br",
+        "fullname":"Tester Pleno",
+        "username":"tester3",
+        "password":"plenopassword123"
+    },
+    {
+        "email": "tester4@tester.com.br",
+        "fullname":"Tester Junior",
+        "username":"tester4",
+        "password":"juniorpassword123"
+    },
+    {
+        "email": "tester5@tester.com.br",
+        "fullname":"Tester Estagiario",
+        "username":"tester5",
+        "password":"estagiariopassword123"
+    }
+]
