@@ -1,6 +1,7 @@
 describe('buscar fotos e dados', () => {
 
-    it('buscar fotos usuario flavio', () => {
+    it.only('buscar fotos usuario flavio', () => {
+        const tempoEsperado = Math.random() * 2000;     //simulating flaky-test
         cy.request({
             method: 'GET',
             url: 'https://apialurapic.herokuapp.com/flavio/photos'
@@ -9,10 +10,11 @@ describe('buscar fotos e dados', () => {
             expect(res.body).is.not.empty
             expect(res.body[0]).to.have.property('description')
             expect(res.body[0].description).to.be.equal('Farol iluminado')
+            //expect(res.duration).to.be.lte(tempoEsperado)   //simulating flaky-test
         })
     })
 
-    it.only('fazer login usuario flavio', () => {
+    it('fazer login usuario flavio', () => {
         cy.request({
             method: 'POST',
             url: 'https://apialurapic.herokuapp.com/user/login',
