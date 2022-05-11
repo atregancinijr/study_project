@@ -2,3 +2,4 @@ node_modules
 videos
 mochawesome-report
 cypress.env.json
+__pycache__
