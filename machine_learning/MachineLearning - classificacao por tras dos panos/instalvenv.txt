@@ -1,0 +1,17 @@
+Give this approach a shot:
+
+Install the pip:
+
+sudo apt-get install python-pip
+Install the virtual environment:
+
+sudo pip install virtualenv
+Store your virtual environments somewhere:
+
+mkdir ~/.storevirtualenvs
+Now you should be able to create a new virtualenv
+
+virtualenv -p python3 yourVenv
+To activate:
+source yourVenv/bin/activate
+To exit your new virtualenv, just deactivate
